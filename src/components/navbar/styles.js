@@ -11,6 +11,9 @@ export const NavbarContainer = styled.div`
     padding: 1rem 4rem;
     position: fixed;
     z-index: 3;
+    @media (max-width:768px) {
+        padding: 1rem 2rem ;
+    }
 `
 
 export const NavbarLogo = styled.img`

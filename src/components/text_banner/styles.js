@@ -8,6 +8,9 @@ export const TextBannerContainer = styled.div `
     justify-content: center;
     align-items: center;
     padding: 1rem 4rem;
+    @media (max-width:768px) {
+        padding: 1rem 2rem ;
+    }
     p{
         font-family: 'Caveat', cursive;
         font-size: 40px;

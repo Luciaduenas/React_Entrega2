@@ -6,4 +6,7 @@ export const CategoriesContainer = styled.div`
     align-items: center;
     gap: 2rem;
     width: 100%;
+    @media (max-width:768px) {
+        flex-direction: column ;
+    }
 `
