@@ -8,5 +8,6 @@ export const CategoriesContainer = styled.div`
     width: 100%;
     @media (max-width:768px) {
         flex-direction: column ;
+        gap: 0.5rem;
     }
 `

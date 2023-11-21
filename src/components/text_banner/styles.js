@@ -21,6 +21,7 @@ export const TextBannerContainer = styled.div `
         color: white;
         @media (max-width:768px) {
         font-size: 30px ;
+        max-width: 100%;
     }}
     h3{
         font-family: 'Caveat', cursive;
@@ -32,6 +33,7 @@ export const TextBannerContainer = styled.div `
         color: white;
         @media (max-width:768px) {
         font-size: 20px ;
+        max-width: 100%;
 
     }
     }
