@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import './App.css'
-import { HomeScreen } from './pages/home/home_screen'
+import {HomeScreen} from './Pages/home/home_screen'
 import { StoreScreen } from './Pages/store/store_screen'
 import { AboutScreen } from './Pages/about/about_screen'
 import { ContactScreen } from './Pages/contact/contact_screen'
