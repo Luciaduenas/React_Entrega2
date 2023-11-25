@@ -28,7 +28,6 @@ export const Navbar = () => {
     const handleToggleCartMenu = (e) =>{
             if (refCartMenu.current.style.display === "none" ){
                 refCartMenu.current.style.display  = "flex";
-                refMenu.current.style.display  = "none";
             } else {
                 refCartMenu.current.style.display  = "none";
             };
