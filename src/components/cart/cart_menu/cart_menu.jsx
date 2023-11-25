@@ -1,20 +1,29 @@
 import React from "react";
-import { CartMenuContainer } from "./styles";
+import { CartMenuContainer, CartMenuTitle,  Divisor, CartMenuProductsContainer, CartButtonContainer, CartTotalContainer, CartTotal, Total } from "./styles";
+import { CartProductCard } from "../cart_product_card/cart_product_card";
+import { popularProducts } from "../../../data/products/products";
+import { Button } from "../../button/button";
 
 export const CartMenu = () => {
     return (
         <CartMenuContainer>
-            <h3>Selected Products</h3>
-            <div>divisor</div>
-            <div>
-                <div>
-                    <div>cart item</div>
-                    <div>suma</div>
-                </div>
-            </div>
-            <div>divisor</div>
-            <div>total</div>
-            <div>comprar o borrar</div>
+            <CartMenuTitle>Selected Products</CartMenuTitle>
+            <Divisor></Divisor>
+            <CartMenuProductsContainer>
+            {   
+                popularProducts.map ((popularProduct) => <CartProductCard key={popularProduct.id} {...popularProduct}/>)
+            }
+            </CartMenuProductsContainer>
+            <Divisor></Divisor>
+            <CartTotalContainer>
+                <CartTotal>Total</CartTotal>
+                <Total>20usd</Total>
+                </CartTotalContainer>
+            <Divisor></Divisor>    
+            <CartButtonContainer>
+                <Button radius="30" background="var(--beige-bg)">Clear Cart</Button>
+                <Button radius="30" background="var(--pinkred)">Buy</Button>
+            </CartButtonContainer>
 
         </CartMenuContainer>
 
