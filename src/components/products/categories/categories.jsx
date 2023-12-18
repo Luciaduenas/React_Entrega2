@@ -1,14 +1,18 @@
 import React from "react";
-import { Button } from "../../button/button";
-import { CategoriesContainer } from "./styles";
+import { CategoriesWidget, CategoriesContainer, StyledCategoryButton } from "./styles";
+import { CategoryButton } from "./categoryButton";
+import { useSelector } from "react-redux";
 
 export const CategoriesFilter = () => {
+  const categories = useSelector (state => state.categories.categories)
     return ( 
-        <CategoriesContainer>
-            <Button radius= "0" background = "var(  --softpink)">Accesories</Button>
-            <Button radius= "0" background = "var(  --softpink)">Bags</Button>
-            <Button radius= "0" background = "var(  --softpink)">Satationary</Button>
-        </CategoriesContainer>
-
+        <CategoriesWidget>
+            <h3>Search by category:</h3>
+            <CategoriesContainer>
+            {   
+               categories.map ((category, i) => <CategoryButton {...category} key={i}/>)
+            }
+            </CategoriesContainer>
+        </CategoriesWidget>
     )
 }

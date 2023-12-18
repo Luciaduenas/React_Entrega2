@@ -1,16 +1,10 @@
 import React from "react";
-import { Navbar } from "../../components/navbar/navbar";
-import { HomeLayout } from  "../../layout/home/home_layout"
-import { Footer } from "../../components/footer/footer";
 import { TextBanner } from "../../components/text_banner/text_banner";
-import { ImageBanner } from "../../components/image_banner/image_banner";
 import { AboutBanner } from "../../components/about_banner/about_banner";
-import { TitleBanner } from "../../components/title_banner/title_banner";
+
 export const AboutScreen = () => {
     return (
         <div>
-            <Navbar/>
-            <HomeLayout>
                 <AboutBanner background = "var(--pink)">
                     <h2>About</h2>
                      <img src="https://i.pinimg.com/564x/87/60/6f/87606fb661a83491750e06f6fc12fe7c.jpg" alt="about img" />
@@ -33,8 +27,6 @@ export const AboutScreen = () => {
                      </div>
                 </AboutBanner>
             <TextBanner><p>We want to make your everyday life into a fantasy magical world. After all, happiness is in the details.</p></TextBanner>  
-            </HomeLayout>
-            <Footer/>
         </div>
     )
 }

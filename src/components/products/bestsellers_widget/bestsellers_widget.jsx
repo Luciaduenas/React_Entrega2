@@ -1,18 +1,20 @@
 import React from "react";
 import { BestSellersWrapper, CursiveTitle, ProducsContainer } from "./styles";
 import { Button } from "../../button/button";
-import { popularProducts } from "../../../data/products/products";
 import { ProductCard } from "../product_card/product_card";
 import { Link } from "react-router-dom";
+import { useSelector } from "react-redux";
 
 
 export const BestsellersWidget = () => {
+    const recommended= useSelector(state=> state.recommended.recommended)
     return (
         <BestSellersWrapper>   
-        <CursiveTitle>Most Popular items</CursiveTitle>
+        <CursiveTitle>Check out this items</CursiveTitle>
         <ProducsContainer>
             {   
-                popularProducts.map ((popularProduct) => <ProductCard key={popularProduct.id} {...popularProduct}/>)
+
+                recommended.map ((recommendedProduct) => <ProductCard key={recommendedProduct.id} {...recommendedProduct}/>)
             }
 
         </ProducsContainer>

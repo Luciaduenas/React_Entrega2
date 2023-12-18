@@ -1,7 +1,6 @@
 import React from "react";
 import { CartMenuContainer, CartMenuTitle,  Divisor, CartMenuProductsContainer, CartButtonContainer, CartTotalContainer, CartTotal, Total } from "./styles";
 import { CartProductCard } from "../cart_product_card/cart_product_card";
-import { popularProducts } from "../../../data/products/products";
 import { Button } from "../../button/button";
 
 export const CartMenu = () => {
@@ -10,9 +9,9 @@ export const CartMenu = () => {
             <CartMenuTitle>Selected Products</CartMenuTitle>
             <Divisor></Divisor>
             <CartMenuProductsContainer>
-            {   
+            {/* {   
                 popularProducts.map ((popularProduct) => <CartProductCard key={popularProduct.id} {...popularProduct}/>)
-            }
+            } */}
             </CartMenuProductsContainer>
             <Divisor></Divisor>
             <CartTotalContainer>

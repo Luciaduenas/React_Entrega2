@@ -1,7 +1,4 @@
 import React from "react";
-import { Navbar } from "../../components/navbar/navbar";
-import { HomeLayout } from  "../../layout/home/home_layout"
-import { Footer } from "../../components/footer/footer";
 import { ContactForm } from "../../components/contact_form/contact_form";
 import { TextBanner } from "../../components/text_banner/text_banner";
 import { TitleBanner } from "../../components/title_banner/title_banner";
@@ -15,8 +12,7 @@ import { FaMapMarkerAlt } from "react-icons/fa";
 export const ContactScreen = () => {
     return (
         <div>
-            <Navbar/>
-            <HomeLayout>
+
                 <ImageBanner><img src="https://i.pinimg.com/564x/bf/fe/fa/bffefa39328cc2f9edb4ce61eae3ebdb.jpg" alt="" /></ImageBanner>
                 <TitleBanner background = "var(--pinkred)" ><p>Lets get in touch!</p></TitleBanner>
                 <TextBanner background = "var(  --pink)"> <h3>Have a question or just want to share a burst of happiness? Reach out to us! We love hearing from our joyful community!</h3></TextBanner>
@@ -33,8 +29,6 @@ export const ContactScreen = () => {
                 <TextBanner background = "var(  --red)"> <p>We shall love to see you in San Francisco!</p></TextBanner>
                 
             
-            </HomeLayout>
-            <Footer/>
         </div>
     )
 };

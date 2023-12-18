@@ -8,6 +8,7 @@ export const CartProductCard = ( {img, name, price})=>{
             <h2>{name}</h2>
             <CartPriceContainer>
                 <p>{price}usd</p>
+                
             </CartPriceContainer>
         </CartProductCardStyle>
         

@@ -8,17 +8,17 @@ export const FooterContainer = styled.div `
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    padding: 4rem;
+    padding: 2rem;
     gap: 0.5rem;
 `
 
 export const FooterLogo = styled.img `
-    height: 100px;
+    height: 80px;
 `
 export const SocialContainer = styled.div `
         h4{
         font-family: 'Caveat', cursive;
-        font-size: 45px;
+        font-size: 35px;
         color: var(--pinkred);
         text-align: center;
         @media (max-width:768px) {
@@ -32,7 +32,7 @@ export const SocialLinksContainer = styled.div`
     align-items: center;
     justify-content: center;
     text-align: center;
-    font-size: 45px;
+    font-size: 30px;
     gap: 1rem;
     a{
         color: var(--pinkred);
@@ -47,7 +47,7 @@ export const Copyright = styled.div `
         font-family: 'Fredoka', sans-serif;
         font-style: italic;
         text-align: center;
-        font-size: 20px;
+        font-size: 15px;
         color: var(--pinkred);
         align-items: center;
     }

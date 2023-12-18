@@ -173,10 +173,27 @@ export const products = [
 		img: "https://i.pinimg.com/564x/8a/49/f8/8a49f84e29592db24c0b07fb1aec880a.jpg",
 		price: 6,
 		category: "bags",
-	},
-    
+	},    
+	{
+		id: 26,
+		name: "You are a Star Necessaire",
+		img: "https://i.pinimg.com/564x/8a/49/f8/8a49f84e29592db24c0b07fb1aec880a.jpg",
+		price: 6,
+		category: "lalalala",
+	},    
 ]
 
+// Simplifico el array para obtener un solo producto por categoria y luego armo un array solo con las categorias existentes.
+let Categories = products.map(item=>{
+	return[item.category, item]
+});
 
+var CategoriesArr = new Map(Categories);
 
- export const popularProducts = products.slice (8,11)
+const CategoriesGroup = [...CategoriesArr.values()];
+
+console.log (CategoriesGroup)
+
+export const CategoriesList = CategoriesGroup.map(a => a.category.toString());
+
+console.log (CategoriesList)
